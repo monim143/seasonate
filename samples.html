@@ -41,6 +41,8 @@
     <link rel="stylesheet" href="assets/css/select2.min.css" />
     <link rel="stylesheet" href="assets/css/checkbox-radio.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <!-- jQuery (necessary for jQuery plugins) -->
@@ -55,19 +57,19 @@
     <!-- header -->
     <header id="header">
         <!-- header-top -->
-        <div class="header-top py-2">
+        <div class="header-top py-2 d-none d-md-block">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <ul class="list-unstyled d-flex address-list align-items-center text-white mb-0">
+                    <div class="col-md-5">
+                        <ul class="list-unstyled d-flex address-list align-items-center justify-content-center justify-content-md-start text-white mb-0">
                             <li class="d-inline-flex align-items-center me-4">
                                 <span class="ni ni-call-fill text-clr-yellow me-2"></span>
                                 <a href="tel:+437203016271"> +43 720-301-627-1</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-7">
-                        <ul class="list-unstyled d-flex address-list align-items-center justify-content-end text-white mb-0">
+                    <div class="col-md-7">
+                        <ul class="list-unstyled d-flex address-list align-items-center justify-content-center justify-content-md-end text-white mb-0">
                             <li class="d-inline-flex align-items-center me-4">
                                 <span class="ni ni-mail-fill text-clr-yellow me-2"></span>
                                 <a href="mailto:info@seasonate.com">info@seasonate.com</a>
@@ -89,32 +91,58 @@
         <!-- navbar -->
         <nav class="navbar py-3 navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="index.html">
                     <img src="assets/img/theme-logo.svg" alt="logo" class="img-fluid" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
+                    <span class="ni ni-menu-alt-r fs-1 text-white"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="nav-toggle">
-                    <ul class="navbar-nav align-items-center ms-auto">
+                    <div class="toggle-bar my-3 d-flex d-lg-none justify-content-end">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-toggle" aria-controls="nav-toggle"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="ni ni-cross text-white fs-1"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-logo d-block d-lg-none mb-3">
+                        <a class="navbar-brand d-inline-block d-lg-none" href="index.html">
+                            <img src="assets/img/theme-logo.svg" alt="img" class="img-fluid" />
+                        </a>
+                    </div>
+                    <ul class="navbar-nav align-items-lg-center ms-auto">
                         <li class="nav-item active">
-                            <a class="nav-link mx-3 mx-lg-4 py-1" href="index.html">Home</a>
+                            <a class="nav-link mb-2 mb-lg-0 mx-lg-4 py-1" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-3 mx-lg-4 py-1" href="pricing.html">Pricing</a>
+                            <a class="nav-link mb-2 mb-lg-0 mx-lg-4 py-1" href="pricing.html">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-3 mx-lg-4 py-1" href="features.html">Features</a>
+                            <a class="nav-link mb-2 mb-lg-0 mx-lg-4 py-1" href="features.html">Features</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav align-items-center navbar-auth ms-lg-5">
+                    <ul class="navbar-nav align-items-lg-center navbar-auth mt-4 mt-lg-0 ms-lg-5">
                         <li class="nav-item">
-                            <a class="nav-link btn btn-outline-light btn-seasonate rounded-pill px-4 py-2 border-2" href="#">Sign In</a>
+                            <a class="nav-link mb-3 mb-lg-0 btn btn-outline-light btn-seasonate rounded-pill px-4 py-2 border-2" href="#">Sign In</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn bg-clr-yellow btn-seasonate text-white rounded-pill px-4 py-2 border-2 ms-4" href="#">Start Your Free
-                                Trial</a>
+                            <a class="nav-link btn bg-clr-yellow btn-seasonate text-white rounded-pill px-4 py-2 border-2 ms-lg-4" href="#">
+                                Start Your Free Trial
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="widget-links widget-address list-unstyled d-block d-lg-none mb-0 mt-5">
+                        <li class="mb-2">
+                            <a href="#">
+                                <img src="assets/img/call.svg" alt="icon" class="img-fluid imgIcon" />
+                                +43 720-301-627-1
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                <img src="assets/img/envelop.svg" alt="icon" class="img-fluid imgIcon" />
+                                info@seasonate.com
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -123,6 +151,7 @@
         <!-- navbar -->
     </header>
     <!-- header -->
+
 
 
 
@@ -150,6 +179,7 @@
 
 
 
+
     <!-- samples -->
     <section class="samples section-padding">
         <div class="container">
@@ -159,8 +189,8 @@
                 </h2>
             </div>
             <div class="row text-center mt-5">
-                <div class="col-lg-6">
-                    <div class="sample-card border rounded py-4 pb-5 px-4">
+                <div class="col-md-6">
+                    <div class="sample-card border rounded py-4 pb-5 px-4 mb-4">
                         <img src="assets/img/sample-card-1.png" alt="img" class="img-fluid" />
                         <div class="sample-card-content mt-4">
                             <h3 class="sample-card-title mb-4">How have you been able to generate 1,6 Million Euro out of 10,000 Euro just within 6 years</h3>
@@ -168,8 +198,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="sample-card border rounded py-4 pb-5 px-4">
+                <div class="col-md-6">
+                    <div class="sample-card border rounded py-4 pb-5 px-4 mb-4">
                         <img src="assets/img/sample-card-2.png" alt="img" class="img-fluid" />
                         <div class="sample-card-content mt-4">
                             <h3 class="sample-card-title mb-4">
@@ -188,6 +218,273 @@
 
 
 
+    <!-- seasonal trading -->
+    <div class="seasonal-trading section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="title text-dark mb-3 wow fadeInUp" data-wow-duration="2.5s" data-wow-delay="200ms">
+                    What is seasonal trading?
+                </h2>
+                <p class="sub-title text-purple-light wow fadeInUp" data-wow-duration="2.5s" data-wow-delay="400ms">
+                    Seasonality are predictable situations that recurry every calendar year. We are
+                    <br class="d-none d-xl-inline" /> showing 7 trades which
+                    happen one after the other – and lead
+                    into recurring <br class="d-none d-xl-inline" /> profits over the last 10 years.
+                </p>
+            </div>
+            <div class="seasonate-table table-responsive border is-radius mt-5 wow fadeInUp" data-wow-duration="2.5s" data-wow-delay="200ms">
+                <table class="table table-striped table-borderless mb-0">
+                    <thead>
+                        <tr>
+                            <th>Stock name</th>
+                            <th>Start date</th>
+                            <th>Start price</th>
+                            <th>End date</th>
+                            <th>End price</th>
+                            <th>Profit</th>
+                            <th>Profit %</th>
+                            <th>Capital</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Netflix</td>
+                            <td>2015-01-02</td>
+                            <td>49.85</td>
+                            <td>2015-01-29</td>
+                            <td>63.4</td>
+                            <td class="text-clr-green">13.55</td>
+                            <td class="text-clr-green">27.18%</td>
+                            <td>12,718</td>
+                        </tr>
+                        <tr>
+                            <td>1-800-Flowers.com</td>
+                            <td>2015-01-30</td>
+                            <td>7.89</td>
+                            <td>2015-02-17</td>
+                            <td>10.75</td>
+                            <td class="text-clr-green">2.86</td>
+                            <td class="text-clr-green">36.25%</td>
+                            <td>17,328</td>
+                        </tr>
+                        <tr>
+                            <td>Sunesis Pharmaceuticals Inc</td>
+                            <td>2015-02-17</td>
+                            <td>133.8</td>
+                            <td>2015-03-09</td>
+                            <td>131.4</td>
+                            <td class="text-red">-2.40</td>
+                            <td class="text-red">-1.79%</td>
+                            <td>17,018</td>
+                        </tr>
+                        <tr>
+                            <td>Volkswagen AG</td>
+                            <td>2015-03-23</td>
+                            <td>225.98</td>
+                            <td>2015-04-29</td>
+                            <td>227.3</td>
+                            <td class="text-clr-green">1.32</td>
+                            <td class="text-clr-green">0.58%</td>
+                            <td>17,117</td>
+                        </tr>
+                        <tr>
+                            <td>Alphabet</td>
+                            <td>2015-06-08</td>
+                            <td>526.83</td>
+                            <td>2015-07-22</td>
+                            <td>662.1</td>
+                            <td class="text-clr-green">135.27</td>
+                            <td class="text-clr-green">25.68%</td>
+                            <td>21,512</td>
+                        </tr>
+                        <tr>
+                            <td>NIKE Inc.</td>
+                            <td>2015-07-31</td>
+                            <td>53.87</td>
+                            <td>2015-09-28</td>
+                            <td>57.4</td>
+                            <td class="text-clr-green">3.53</td>
+                            <td class="text-clr-green">6.55%</td>
+                            <td>22,921</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Inc.</td>
+                            <td>2015-10-02</td>
+                            <td>41.31</td>
+                            <td>2015-11-06</td>
+                            <td>49.78</td>
+                            <td class="text-clr-green">8.47</td>
+                            <td class="text-clr-green">20.50%</td>
+                            <td>27,620</td>
+                        </tr>
+                        <tr>
+                            <td>Netflix</td>
+                            <td>2016-01-04</td>
+                            <td>109.96</td>
+                            <td>2016-01-29</td>
+                            <td>91.84</td>
+                            <td class="text-red">-18.12</td>
+                            <td class="text-red">-16.48%</td>
+                            <td>23,069</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--/ seasonal trading -->
+
+
+
+    <!-- statistics -->
+    <section class="statistics section-padding pt-0">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="title wow fadeInRight" data-wow-duration="2.5s" data-wow-delay="200ms">
+                    Historical Analysis 2015 to 2020
+                </h2>
+            </div>
+            <div class="statistics-chart">
+                <img src="assets/img/statistics-1.png" alt="img" class="img-fluid" />
+            </div>
+        </div>
+    </section>
+    <!-- statistics -->
+
+
+
+
+    <!-- each-stock -->
+    <section class="each-stock section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="title text-dark mb-3 wow fadeInUp" data-wow-duration="2.5s" data-wow-delay="200ms">
+                    Let Us Have a Look on Each Stock
+                </h2>
+                <p class="sub-title text-purple-light wow fadeInUp" data-wow-duration="2.5s" data-wow-delay="400ms">
+                    Seasonality are predictable situations that recurry every calendar year. We are <br class="d-none d-xl-inline" />
+                    showing 7 trades which happen one after the other – and lead
+                    into recurring <br class="d-none d-xl-inline" /> profits over the last 10 years.
+                </p>
+            </div>
+            <div class="each-stock-items mt-5">
+                <div class="row text-center justify-content-center">
+                    <div class="col-md-6">
+                        <div class="each-stock-card bg-white is-radius mb-4 wow fadeInLeft" data-wow-duration="2.5s" data-wow-delay="200ms">
+                            <h4 class="text-blue-dark py-3 text-start px-4 stock-card-title">Netflix Statistics 2015-2020 </h4>
+                            <div class="chart pt-2 pb-3 border-top border-bottom">
+                                <img src="assets/img/chart.png" alt="img" class="img-fluid d-inline-block" />
+                            </div>
+                            <div class="stock-card-content px-4 py-5">
+                                <img src="assets/img/netflix.svg" alt="" class="img-fluid mb-4 brand-logo" />
+                                <p class="card-content-desc">
+                                    Netflix did rise between January 2nd and January 29th by average profit of <strong class="text-clr-green">17.99%</strong>
+                                    percent and had only 1 loss in 2016
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="each-stock-card bg-white is-radius mb-4 wow fadeInRight" data-wow-duration="2.5s" data-wow-delay="200ms">
+                            <h4 class="text-blue-dark py-3 text-start px-4 stock-card-title">1-800-Flowers.com Statistics 2015-2020</h4>
+                            <div class="chart pt-2 pb-3 border-top border-bottom">
+                                <img src="assets/img/chart.png" alt="img" class="img-fluid d-inline-block" />
+                            </div>
+                            <div class="stock-card-content px-4 py-5">
+                                <img src="assets/img/flowers-com.png" alt="" class="img-fluid mb-4 brand-logo" />
+                                <p class="card-content-desc">
+                                    1-800-Flowers.com did rise between January 30th and February 14th by average profit of 1 <strong
+                                        class="text-clr-green">14.99%</strong>
+                                    percent and had only 1 loss in 2018
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="each-stock-card bg-white is-radius mb-4 wow fadeInUp" data-wow-duration="2.5s" data-wow-delay="200ms">
+                            <h4 class="text-blue-dark py-3 text-start px-4 stock-card-title">Sunesis Statistics 2015-2020 </h4>
+                            <div class="chart pt-2 pb-3 border-top border-bottom">
+                                <img src="assets/img/chart.png" alt="img" class="img-fluid d-inline-block" />
+                            </div>
+                            <div class="stock-card-content px-4 py-5">
+                                <img src="assets/img/sunesis.png" alt="" class="img-fluid mb-4 brand-logo" />
+                                <p class="card-content-desc">
+                                    Sunesis Pharmaceuticals Inc did rise between February 18th and March 9th by average profit of <strong
+                                        class="text-clr-green">14.99%</strong>
+                                    percent and had only 1 loss in 2015
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="each-stock-card bg-white is-radius mb-4 wow fadeInUp" data-wow-duration="2.5s" data-wow-delay="400ms">
+                            <h4 class="text-blue-dark py-3 text-start px-4 stock-card-title">Volkswagen AG Statistics 2015-2020 </h4>
+                            <div class="chart pt-2 pb-3 border-top border-bottom">
+                                <img src="assets/img/chart.png" alt="img" class="img-fluid d-inline-block" />
+                            </div>
+                            <div class="stock-card-content px-4 py-5">
+                                <img src="assets/img/volkswagen.png" alt="" class="img-fluid mb-4 brand-logo" />
+                                <p class="card-content-desc">
+                                    Volkswagen AG did rise between March 23rd and April 29th by average profit of
+                                    <strong class="text-clr-green">14.99%</strong> percent
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="each-stock-card bg-white is-radius mb-4 wow fadeInDown" data-wow-duration="2.5s" data-wow-delay="200ms">
+                            <h4 class="text-blue-dark py-3 text-start px-4 stock-card-title">Alphabet Statistics 2015-2020 </h4>
+                            <div class="chart pt-2 pb-3 border-top border-bottom">
+                                <img src="assets/img/chart.png" alt="img" class="img-fluid d-inline-block" />
+                            </div>
+                            <div class="stock-card-content px-4 py-5">
+                                <img src="assets/img/alphabet.svg" alt="" class="img-fluid mb-4 brand-logo" />
+                                <p class="card-content-desc">
+                                    Alphabet did rise between June 8th and July 22nd by average profit of
+                                    <strong class="text-clr-green">14.99%</strong> percent
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="each-stock-card bg-white is-radius mb-4 wow fadeInDown" data-wow-duration="2.5s" data-wow-delay="200ms">
+                            <h4 class="text-blue-dark py-3 text-start px-4 stock-card-title">Nike Inc. Statistics 2015-2020 </h4>
+                            <div class="chart pt-2 pb-3 border-top border-bottom">
+                                <img src="assets/img/chart.png" alt="img" class="img-fluid d-inline-block" />
+                            </div>
+                            <div class="stock-card-content px-4 py-5">
+                                <img src="assets/img/nike.png" alt="" class="img-fluid mb-4 brand-logo" />
+                                <p class="card-content-desc">
+                                    NIKE Inc. did rise between July 31st and September 28th by average profit of
+                                    <strong class="text-clr-green">8.99%</strong>percent and had only 1 loss in 2017
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="each-stock-card bg-white is-radius mb-4 wow fadeInDown" data-wow-duration="2.5s" data-wow-delay="200ms">
+                            <h4 class="text-blue-dark py-3 text-start px-4 stock-card-title">Microsoft Inc. Statistics 2015-2020 </h4>
+                            <div class="chart pt-2 pb-3 border-top border-bottom">
+                                <img src="assets/img/chart.png" alt="img" class="img-fluid d-inline-block" />
+                            </div>
+                            <div class="stock-card-content px-4 py-5">
+                                <img src="assets/img/amazon.svg" alt="" class="img-fluid mb-4 brand-logo" />
+                                <p class="card-content-desc">
+                                    Microsoft Inc. did rise between October 2nd and November 6th by average profit of
+                                    <strong class="text-clr-green">9.99%</strong> percent and had only 1 loss in 2018
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- each-stock -->
+
+
+
+
     <!-- newsletter -->
     <section class="newsletter section-padding">
         <div class="container">
@@ -198,7 +495,7 @@
                 </h2>
             </div>
             <form action="#" class="newsletter-form text-center mt-5">
-                <div class="form-group mx-auto d-inline-flex position-relative">
+                <div class="form-group mx-auto d-sm-inline-flex position-relative">
                     <input type="email" class="form-control wow fadeInRight" placeholder="Email Address" data-wow-duration="2.5s" data-wow-delay="100ms" />
                     <button type="submit" class="btn btn-subscribe wow fadeInRight" data-wow-duration="1s" data-wow-delay="1000ms">
                         Subscribe Now!
@@ -341,6 +638,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <!-- Script JS -->
     <script src="assets/js/script.js"></script>
