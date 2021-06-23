@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA;;;;;GAKG",
+"mappings": "AAAA;;;;;GAKG;AAGH,yBAAyB;EACrB,gBAAiB;IACb,OAAO,EAAE,MAAM;;EAIf,sBAAO;IACH,SAAS,EAAE,eAAe;EAG9B,0BAAW;IACP,SAAS,EAAE,eAAe",
 "sources": ["responsive.scss"],
 "names": [],
 "file": "responsive.css"

@@ -79,7 +79,24 @@ $(document).ready(function () {
     });
 
 
-    
+    // testimonial-carousel
+    $(function () {
+        if ($('.testimonial-carousel').length) {
+            $(".testimonial-carousel").owlCarousel({
+                loop: true,
+                items: 1,
+                center: true,
+                margin: 30,
+                nav: $(window).width() > 992 ? true : false,
+                dots: true,
+                autoplay: false,
+                navText: ["<span class='ni ni-chevron-left'></span>", "<span class='ni ni-chevron-right'></span>"],
+                autoplayHoverPause: true,
+            });
+        }
+    });
+
+
     // parallax with jarallax
     $(function () {
         if ($('.jarallax').length) {
